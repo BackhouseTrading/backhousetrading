@@ -672,6 +672,9 @@ a:hover { color: var(--blue-dark); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+  .hero { align-items: flex-start; }
+  .hero__content { padding-top: 138px; }
+  .hero__subtitle { margin-bottom: 48px; }
   .hero__actions .btn--ghost {
     background: var(--blue);
     color: var(--white);
