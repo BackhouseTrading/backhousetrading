@@ -6,7 +6,8 @@
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 68px; }
+@media (max-width: 768px) { html { scroll-padding-top: 90px; } }
 img { max-width: 100%; display: block; }
 
 /* --- Design Tokens --- */
@@ -674,8 +675,9 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 @media (max-width: 768px) {
   .hero { align-items: flex-start; }
-  .hero__content { padding-top: 138px; }
+  .hero__content { padding-top: 186px; padding-bottom: 96px; min-height: 100vh; display: flex; flex-direction: column; }
   .hero__subtitle { margin-bottom: 48px; }
+  .hero__actions { margin-top: auto; }
   .hero__actions .btn--ghost {
     background: var(--blue);
     color: var(--white);
