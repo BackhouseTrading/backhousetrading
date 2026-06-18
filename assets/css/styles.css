@@ -257,6 +257,22 @@ a:hover { color: var(--blue-dark); }
   flex-wrap: wrap;
 }
 
+.hero__scroll-cue {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.35);
+  transition: color var(--transition);
+  animation: bounce 2s ease-in-out infinite;
+}
+.hero__scroll-cue:hover { color: rgba(255,255,255,0.7); }
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
 /* ============================================================
    BUTTONS
    ============================================================ */
