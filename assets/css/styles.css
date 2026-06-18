@@ -550,7 +550,7 @@ a:hover { color: var(--blue-dark); }
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
-.form__group { margin-bottom: 18px; }
+.form__group { margin-bottom: 14px; }
 .form__label {
   display: block;
   font-size: 12.5px;
@@ -580,7 +580,7 @@ a:hover { color: var(--blue-dark); }
   border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(50, 104, 201, 0.1);
 }
-.form__textarea { resize: vertical; min-height: 96px; }
+.form__textarea { resize: vertical; min-height: 72px; }
 .form__note {
   font-size: 11px;
   color: var(--gray-400);
