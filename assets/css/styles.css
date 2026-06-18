@@ -672,8 +672,19 @@ a:hover { color: var(--blue-dark); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
+  .hero__actions .btn--ghost {
+    background: var(--blue);
+    color: var(--white);
+    border-color: var(--blue);
+    width: 100%;
+    justify-content: center;
+  }
+  .hero__actions .btn--ghost:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+  }
   .nav { height: auto; }
-  .nav__inner { flex-wrap: wrap; padding-top: 14px; padding-bottom: 0; justify-content: center; }
+  .nav__inner { flex-wrap: wrap; padding-top: 16px; padding-bottom: 0; justify-content: center; align-content: flex-start; gap: 0; row-gap: 16px; }
   .nav__logo { order: 1; }
   .nav__cta { display: none; }
   .nav__hamburger { display: none; }
@@ -683,8 +694,8 @@ a:hover { color: var(--blue-dark); }
     gap: 0;
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 10px 0 12px;
-    margin-top: 10px;
+    padding: 4px 0 6px;
+    margin-top: 2px;
     border-top: 1px solid rgba(255,255,255,0.07);
     justify-content: space-evenly;
   }
