@@ -344,7 +344,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 .overview {
   padding: var(--section-pad) 0;
-  background: var(--off-white);
+  background: var(--white);
 }
 .overview__inner {
   max-width: 900px;
