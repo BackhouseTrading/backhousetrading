@@ -97,8 +97,9 @@ a:hover { color: var(--blue-dark); }
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 44px;
   list-style: none;
+  margin-left: auto;
 }
 .nav__links a {
   font-size: 13px;
