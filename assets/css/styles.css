@@ -6,8 +6,8 @@
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 68px; }
-@media (max-width: 768px) { html { scroll-padding-top: 90px; } }
+html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: calc(68px + env(safe-area-inset-top)); }
+@media (max-width: 768px) { html { scroll-padding-top: calc(90px + env(safe-area-inset-top)); } }
 img { max-width: 100%; display: block; }
 
 /* --- Design Tokens --- */
@@ -63,7 +63,8 @@ a:hover { color: var(--blue-dark); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 200;
-  height: 68px;
+  height: calc(68px + env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
   display: flex;
   align-items: center;
   transition: background 280ms ease, box-shadow 280ms ease;
@@ -180,6 +181,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   background: var(--navy);
   display: flex;
   align-items: center;
@@ -211,7 +213,7 @@ a:hover { color: var(--blue-dark); }
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 120px var(--page-margin) 64px;
+  padding: calc(120px + env(safe-area-inset-top)) var(--page-margin) 64px;
   width: 100%;
 }
 .hero__tag {
@@ -675,7 +677,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 @media (max-width: 768px) {
   .hero { align-items: flex-start; }
-  .hero__content { padding-top: 186px; padding-bottom: 96px; min-height: 100vh; display: flex; flex-direction: column; }
+  .hero__content { padding-top: calc(186px + env(safe-area-inset-top)); padding-bottom: calc(96px + env(safe-area-inset-bottom)); min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
   .hero__subtitle { margin-bottom: 48px; }
   .hero__actions { margin-top: auto; }
   .hero__actions .btn--ghost {
