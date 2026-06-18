@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 40" role="img" aria-label="Marex">
-  <!-- Forward diagonal mark — references Marex's brand direction mark -->
-  <line x1="4" y1="36" x2="18" y2="4" stroke="white" stroke-width="4" stroke-linecap="round"/>
-  <!-- Wordmark -->
-  <text x="28" y="30"
-        font-family="'Helvetica Neue', Arial, Helvetica, sans-serif"
-        font-size="25" font-weight="700" fill="white" letter-spacing="0.5">Marex</text>
-</svg>
