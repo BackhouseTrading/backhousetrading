@@ -721,3 +721,9 @@ a:hover { color: var(--blue-dark); }
   .form { padding: 24px; }
   .form__row { grid-template-columns: 1fr; }
 }
+
+/* Safari-only: extend hero to cover area behind floating URL bar */
+.is-safari .hero { min-height: calc(100lvh + env(safe-area-inset-bottom)); }
+@media (max-width: 768px) {
+  .is-safari .hero__content { min-height: calc(100lvh + env(safe-area-inset-bottom)); }
+}
