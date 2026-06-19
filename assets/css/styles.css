@@ -181,7 +181,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 .hero {
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100lvh;
   background: var(--navy);
   display: flex;
   align-items: center;
@@ -677,7 +677,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 @media (max-width: 768px) {
   .hero { align-items: flex-start; }
-  .hero__content { padding-top: calc(186px + env(safe-area-inset-top)); padding-bottom: calc(96px + env(safe-area-inset-bottom)); min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+  .hero__content { padding-top: calc(186px + env(safe-area-inset-top)); padding-bottom: calc(96px + env(safe-area-inset-bottom)); min-height: 100vh; min-height: 100lvh; display: flex; flex-direction: column; }
   .hero__subtitle { margin-bottom: 48px; }
   .hero__actions { margin-top: auto; }
   .hero__actions .btn--ghost {
