@@ -181,6 +181,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
   background: var(--navy);
   display: flex;
   align-items: center;
@@ -676,7 +677,7 @@ a:hover { color: var(--blue-dark); }
    ============================================================ */
 @media (max-width: 768px) {
   .hero { align-items: flex-start; }
-  .hero__content { padding-top: calc(186px + env(safe-area-inset-top)); padding-bottom: calc(96px + env(safe-area-inset-bottom)); min-height: 100vh; display: flex; flex-direction: column; }
+  .hero__content { padding-top: calc(186px + env(safe-area-inset-top)); padding-bottom: calc(96px + env(safe-area-inset-bottom)); min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
   .hero__subtitle { margin-bottom: 48px; }
   .hero__actions { margin-top: auto; }
   .hero__actions .btn--ghost {
@@ -719,10 +720,4 @@ a:hover { color: var(--blue-dark); }
   .hero__actions { flex-direction: column; }
   .form { padding: 24px; }
   .form__row { grid-template-columns: 1fr; }
-}
-
-/* Safari-only: extend hero to physical screen edge (100lvh excludes both safe areas on iOS) */
-.is-safari .hero { min-height: calc(100lvh + env(safe-area-inset-top) + env(safe-area-inset-bottom)); }
-@media (max-width: 768px) {
-  .is-safari .hero__content { min-height: calc(100lvh + env(safe-area-inset-top) + env(safe-area-inset-bottom)); }
 }

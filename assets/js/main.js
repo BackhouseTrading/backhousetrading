@@ -5,11 +5,6 @@
 (function () {
   'use strict';
 
-  /* ---- Safari detection (iOS Chrome has CriOS in UA; Safari does not) ---- */
-  if (/^((?!chrome|android|crios|fxios).)*safari/i.test(navigator.userAgent)) {
-    document.documentElement.classList.add('is-safari');
-  }
-
   /* ---- Navigation scroll behavior ---- */
   const nav = document.querySelector('.nav');
   function onScroll() {
